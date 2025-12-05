@@ -1,0 +1,47 @@
+/*
+Sticky Footer by Ryan Fait - http://ryanfait.com/sticky-footer/
+found at: http://stackoverflow.com/questions/8815784/how-to-keep-footer-at-the-bottom-even-with-dynamic-height-website
+*/
+
+
+*
+{
+    margin: 0;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+.wrapper
+{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+}
+
+/*
+ the html:
+ 
+ <html>
+    <head>
+        <link rel="stylesheet" href="layout.css" ... />
+    </head>
+    <body>
+        <div class="wrapper">
+            <p>Your website content here.</p>
+            <div class="push"></div>
+        </div>
+        <div class="footer">
+            <p>Copyright (c) 2008</p>
+        </div>
+    </body>
+</html>
+
+*/

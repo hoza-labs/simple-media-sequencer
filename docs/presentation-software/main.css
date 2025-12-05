@@ -1,0 +1,125 @@
+body
+{
+    font-family: Arial;
+    background-color: black;
+    margin: 0px;
+    /* margin-bottom: 30px; */ /* must match or exceed footer height, unless "full height" wrapper is used */
+    overflow-y: hidden;
+}
+
+/* body margin-bottom should be same as footer-height */
+/* from: http://stackoverflow.com/a/8815903 */
+
+.canvas
+{
+    color: white;
+    background-color: #404040;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.footer
+{
+    height: 30px; /* must not exceed body margin-bottom */
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: calc(100% - 10px); /* subtract padding left/right and border left/right */
+    background: #808080;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.controls
+{
+    float: left;
+    width: 30%;
+}
+
+.now-playing
+{
+    color: #800000;
+}
+
+.debug
+{
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+
+/* BEGIN FULL HEIGHT: this makes the canvas div take up the entire browser window height assuming no footer business */
+
+/* initial estimate assuming no margin, border or padding for any elements and no footer business */
+html, body, .full-height { height: calc(100%); }
+
+.full-height /* fix canvas by subtracting canvas margin, border, and padding; and subtracting footer height, margin, border and padding */
+{
+    height: calc(
+                100%
+                - 20px  /* canvas padding top and bottom */
+                -  2px  /* canvas border top and bottom */
+                - 30px  /* footer height */
+                -  0px   /* footer padding top and bottom */
+                );
+}
+
+/* fix body body by subtracting body margin, padding and border */
+
+/* END FULL HEIGHT */
+
+
+/* BEGIN VERTICAL CENTERING */
+
+.vertical-wrapper
+{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.vertical-wrapper .vertical-center
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.horizontal-center
+{
+    text-align: center;
+}
+
+
+/* END VERTICAL CENTERING */
+
+
+
+
+/* html */
+/*
+
+<!DOCTYPE>
+<html>
+<head>
+    <title>Media Show</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <script src="jquery-2.0.3.min.js"></script>
+</head>
+<body>
+    <div class="canvas full-height">
+        <div class="vertical-wrapper">
+            <div class="vertical-center horizontal-center">
+                content goes here
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        footer
+    </div>
+</body>
+</html>
+
+
+*/
