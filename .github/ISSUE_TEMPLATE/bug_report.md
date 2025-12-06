@@ -18,7 +18,7 @@ NOTE: This bug report is a Contribution to the project, subject to the terms des
 (Please provide the exact steps that are the simplest way for us to reproduce the problem.)
 
 1. Use (what kind of device? Phone? laptop?).
-2. Go to https://simplemediasequencer.hoza.us/
+2. Go to https://simple-media-sequencer.hoza.us/
 3. Click on (this).
 4. Scroll down to (that).
 5. Notice (this one weird thing).

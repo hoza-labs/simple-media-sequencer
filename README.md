@@ -2,7 +2,7 @@
 
 This project preserves an old [website] that was used to present media files (images, sounds, and videos) in a predefined sequence and under the simple push-button control of a person conducting an experiment. It was used for a science fair project called [Parrot Perceptions].
 
-[website]: https://simplemediasequencer.hoza.us
+[website]: https://simple-media-sequencer.hoza.us
 [Parrot Perceptions]: https://birdandbunny.hoza.us/articlesandlinks/parrotperceptions.html
 
 ## LICENSE
@@ -20,7 +20,7 @@ Thanks for your interest in contributing to this project. Please note that this 
 
 NOTE: All Contributions you make become the property of the project copyright owner. Please see [CONTRIBUTING.md] for more information.
 
-[start a discussion]: https://github.com/hoza-labs/simplemediasequencer/issues
-[submit a proposed change]: https://github.com/hoza-labs/simplemediasequencer/pulls
+[start a discussion]: https://github.com/hoza-labs/simple-media-sequencer/issues
+[submit a proposed change]: https://github.com/hoza-labs/simple-media-sequencer/pulls
 
 [CONTRIBUTING.md]: ./CONTRIBUTING.md
